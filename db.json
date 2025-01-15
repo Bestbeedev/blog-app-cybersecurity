@@ -1,0 +1,515 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "image": "src/assets/images/formations/cybersecurity.jpeg",
+      "title": "Introduction à la cybersécurité",
+      "desc": "Découvrez les bases de la cybersécurité et protégez vos données.",
+      "sujet": "cybersecurity",
+      "content": "La cybersécurité est un domaine essentiel dans le monde numérique d'aujourd'hui. Elle englobe un ensemble de pratiques et de technologies conçues pour protéger les systèmes informatiques, les réseaux et les données contre les cyberattaques. Les menaces peuvent provenir de diverses sources, y compris les hackers, les logiciels malveillants et les attaques par déni de service. Pour se protéger, il est crucial de comprendre les principes de base de la cybersécurité, tels que l'authentification, le chiffrement, la gestion des vulnérabilités et la réponse aux incidents. En adoptant ces pratiques, vous pouvez renforcer la sécurité de vos systèmes et protéger vos informations sensibles.",
+      "_uploadedAt": "2024-12-01T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "image": "src/assets/images/formations/hacking.jpeg",
+      "title": "Les bases du hacking éthique",
+      "desc": "Apprenez les concepts essentiels du hacking éthique.",
+      "sujet": "hacking",
+      "content": "Le hacking éthique, également connu sous le nom de piratage éthique, est la pratique consistant à contourner les défenses de sécurité d'un système informatique avec l'autorisation du propriétaire pour identifier les vulnérabilités. Contrairement aux hackers malveillants, les hackers éthiques utilisent leurs compétences pour améliorer la sécurité des systèmes. Ils effectuent des tests de pénétration, analysent les réseaux et les applications pour détecter les failles de sécurité et recommandent des mesures correctives. Le hacking éthique est une compétence précieuse dans le domaine de la cybersécurité, car il aide les organisations à se protéger contre les cybermenaces en identifiant et en corrigeant les faiblesses avant qu'elles ne soient exploitées par des attaquants.",
+      "_uploadedAt": "2024-11-20T14:00:00Z"
+    },
+    {
+      "id": "3",
+      "image": "src/assets/images/formations/webdev_2.jpeg",
+      "title": "Comment débuter dans la programmation web",
+      "desc": "Guide pour démarrer dans le développement web.",
+      "sujet": "webdev",
+      "content": "La programmation web est une compétence essentielle pour créer des sites web interactifs et dynamiques. Pour débuter, il est important de comprendre les langages de base tels que HTML, CSS et JavaScript. HTML (HyperText Markup Language) est utilisé pour structurer le contenu des pages web, CSS (Cascading Style Sheets) pour styliser et mettre en forme ce contenu, et JavaScript pour ajouter des fonctionnalités interactives. Une fois que vous maîtrisez ces langages, vous pouvez explorer des frameworks et des bibliothèques comme React, Angular ou Vue.js pour simplifier le développement de projets plus complexes. En outre, il est utile de se familiariser avec les outils de développement web, les environnements de développement intégrés (IDE) et les systèmes de gestion de version comme Git.",
+      "_uploadedAt": "2024-11-18T08:00:00Z"
+    },
+    {
+      "id": "4",
+      "image": "src/assets/images/formations/data.png",
+      "title": "Analyse de données pour débutants",
+      "desc": "Découvrez comment analyser des données efficacement.",
+      "sujet": "data",
+      "content": "L'analyse de données est un processus crucial pour extraire des informations significatives à partir de données brutes. Pour les débutants, il est important de comprendre les concepts de base tels que la collecte de données, le nettoyage des données, l'exploration des données et la visualisation des données. La collecte de données implique de rassembler des informations à partir de diverses sources, tandis que le nettoyage des données consiste à éliminer les erreurs et les incohérences. L'exploration des données permet d'identifier des tendances et des modèles, et la visualisation des données aide à présenter ces informations de manière compréhensible. Les outils couramment utilisés pour l'analyse de données incluent Excel, Python avec des bibliothèques comme Pandas et Matplotlib, et des logiciels de visualisation comme Tableau.",
+      "_uploadedAt": "2024-12-02T12:30:00Z"
+    },
+    {
+      "id": "5",
+      "image": "src/assets/images/formations/cybersecurity.jpeg",
+      "title": "Techniques avancées en cybersécurité",
+      "desc": "Explorez des techniques de pointe pour sécuriser vos systèmes.",
+      "sujet": "cybersecurity",
+      "content": "Les techniques avancées en cybersécurité sont essentielles pour protéger les systèmes contre les menaces sophistiquées. Parmi ces techniques, on trouve l'utilisation de l'intelligence artificielle et de l'apprentissage automatique pour détecter les anomalies et les comportements suspects, l'implémentation de la sécurité basée sur le risque pour prioriser les efforts de protection, et l'adoption de l'architecture Zero Trust qui ne fait confiance à aucun utilisateur ou appareil par défaut. En outre, les entreprises doivent se concentrer sur la formation continue de leur personnel en matière de cybersécurité, la mise en place de politiques de sécurité robustes et la réalisation régulière de tests de pénétration pour identifier et corriger les vulnérabilités.",
+      "_uploadedAt": "2024-12-05T15:45:00Z"
+    },
+    {
+      "id": "6",
+      "image": "src/assets/images/formations/data.png",
+      "title": "Introduction au machine learning",
+      "desc": "Apprenez les bases du machine learning pour la science des données.",
+      "sujet": "data",
+      "content": "Le machine learning, ou apprentissage automatique, est une branche de l'intelligence artificielle qui permet aux systèmes de s'améliorer automatiquement à partir de l'expérience. Pour commencer, il est important de comprendre les concepts fondamentaux tels que les algorithmes supervisés et non supervisés, les ensembles de données d'entraînement et de test, et les métriques d'évaluation des modèles. Les algorithmes supervisés utilisent des données étiquetées pour apprendre à prédire des résultats, tandis que les algorithmes non supervisés identifient des structures cachées dans des données non étiquetées. Les outils populaires pour le machine learning incluent Python avec des bibliothèques comme Scikit-learn, TensorFlow et Keras. En maîtrisant ces concepts et outils, vous pouvez développer des modèles capables de résoudre des problèmes complexes dans divers domaines.",
+      "_uploadedAt": "2024-12-06T09:00:00Z"
+    },
+    {
+      "id": "7",
+      "image": "src/assets/images/formations/hacking.jpeg",
+      "title": "Projets pratiques en hacking éthique",
+      "desc": "Découvrez des exercices pour améliorer vos compétences en hacking.",
+      "sujet": "hacking",
+      "content": "Les projets pratiques en hacking éthique sont essentiels pour développer et affiner vos compétences en sécurité informatique. Ces projets peuvent inclure des exercices de capture de drapeau (CTF), où vous devez résoudre des défis de sécurité pour capturer des 'drapeaux' virtuels, des tests de pénétration sur des environnements de test sécurisés, et des analyses de vulnérabilités sur des applications web. En participant à ces projets, vous pouvez apprendre à utiliser des outils de hacking courants comme Metasploit, Nmap et Burp Suite, et à appliquer des techniques de piratage éthique pour identifier et corriger les failles de sécurité. Ces expériences pratiques sont inestimables pour préparer une carrière en cybersécurité.",
+      "_uploadedAt": "2024-12-07T11:15:00Z"
+    },
+    {
+      "id": "8",
+      "image": "src/assets/images/formations/webdev_2.jpeg",
+      "title": "Optimisation des performances web",
+      "desc": "Apprenez à rendre vos sites web plus rapides.",
+      "sujet": "webdev",
+      "content": "L'optimisation des performances web est cruciale pour offrir une expérience utilisateur fluide et rapide. Pour améliorer les performances de vos sites web, il est important de se concentrer sur plusieurs aspects clés, tels que la réduction de la taille des fichiers, la minimisation des requêtes HTTP, l'utilisation de la mise en cache, et l'optimisation des images. La réduction de la taille des fichiers peut être réalisée en compressant les fichiers CSS, JavaScript et HTML. La minimisation des requêtes HTTP implique de combiner plusieurs fichiers en un seul. L'utilisation de la mise en cache permet de stocker temporairement des ressources pour un accès plus rapide. Enfin, l'optimisation des images consiste à réduire leur taille sans sacrifier la qualité. En appliquant ces techniques, vous pouvez améliorer considérablement la vitesse de chargement de vos pages web.",
+      "_uploadedAt": "2024-12-08T17:00:00Z"
+    },
+    {
+      "id": "9",
+      "image": "src/assets/images/formations/cybersecurity.jpeg",
+      "title": "Sécurité des applications mobiles",
+      "desc": "Protégez vos applications mobiles contre les cyberattaques.",
+      "sujet": "cybersecurity",
+      "content": "La sécurité des applications mobiles est un aspect crucial de la cybersécurité, car les applications mobiles sont souvent la cible de cyberattaques. Pour protéger vos applications, il est important de suivre les meilleures pratiques de sécurité, telles que l'implémentation de l'authentification forte, le chiffrement des données sensibles, et la validation des entrées utilisateur pour prévenir les attaques par injection. En outre, il est essentiel de maintenir vos applications à jour avec les derniers correctifs de sécurité et de réaliser des tests de sécurité réguliers pour identifier et corriger les vulnérabilités. En adoptant ces mesures, vous pouvez renforcer la sécurité de vos applications mobiles et protéger les données de vos utilisateurs.",
+      "_uploadedAt": "2024-12-09T13:45:00Z"
+    },
+    {
+      "id": "10",
+      "image": "src/assets/images/formations/data.png",
+      "title": "Data storytelling",
+      "desc": "Racontez des histoires convaincantes grâce à vos données.",
+      "sujet": "data",
+      "content": "Le data storytelling est l'art de raconter des histoires convaincantes en utilisant des données. Il combine l'analyse de données avec des techniques de narration pour communiquer des informations de manière claire et engageante. Pour réussir dans le data storytelling, il est important de comprendre votre public et de choisir les visualisations de données appropriées pour transmettre votre message. Les graphiques, les tableaux et les infographies sont des outils puissants pour illustrer les tendances et les insights. En outre, il est essentiel de structurer votre histoire de manière logique, en commençant par une introduction qui présente le contexte, en passant par une analyse détaillée des données, et en concluant par des recommandations ou des appels à l'action. En maîtrisant le data storytelling, vous pouvez transformer des données complexes en récits captivants qui inspirent et informent votre audience.",
+      "_uploadedAt": "2024-12-10T10:30:00Z"
+    }
+  ],
+
+  "partenariats": [
+    {
+      "id": "1",
+      "name_org": "TechSecure",
+      "desc": "Une entreprise spécialisée dans la sécurité informatique.",
+      "image": "https://example.com/logo-techsecure.png",
+      "website": "https://techsecure.com"
+    },
+    {
+      "id": "2",
+      "name_org": "DataProtect",
+      "desc": "Un partenaire de confiance pour la protection des données.",
+      "image": "https://example.com/logo-dataprotect.png",
+      "website": "https://dataprotect.com"
+    },
+    {
+      "id": "3",
+      "name_org": "WebSafe",
+      "desc": "Votre partenaire",
+      "image": "https://example.com/logo-websafe.png", 
+      "website": "https://websafe.com"},
+    {
+      "id": "4",
+      "name_org": "SecureTech",
+      "desc": "Des solutions de sécurité pour votre entreprise.",
+      "image": "https://example.com/logo-securetech.png",
+      "website": "https://securetech.com"
+    },
+    {
+      "id": "5",
+      "name_org": "CyberSafe",
+      "desc": "Une entreprise spécialisée dans la sécurité cyber.",
+      "image": "https://example.com/logo-cybersafe.png",
+      "website": "https://cybersafe.com"
+    }
+  ],
+  "produits": [
+    {
+      "id": "1",
+      "type": "Logiciel",
+      "name_product": "Antivirus Pro",
+      "image": "src/assets/images/produits/firewall.jpeg",
+      "desc": "Un antivirus puissant pour protéger vos données.",
+      "price": 49.99,
+      "likes": 40,
+      "_uploadedAt": "2024-12-10T08:30:00Z"
+    },
+    {
+      "id": "2",
+      "type": "Application",
+      "name_product": "ChatSecure",
+      "image": "src/assets/images/produits/camera.jpeg",
+      "desc": "Une application de chat sécurisée.",
+      "price": 19.99,
+      "likes": 20,
+      "_uploadedAt": "2024-12-10T09:45:00Z"
+    },
+    {
+      "id": "3",
+      "type": "Service",
+      "name_product": "SecureCloud",
+      "image": "src/assets/images/produits/routeur.jpeg",
+      "desc": "Un service de stockage cloud sécurisé.",
+      "price": 9.99,
+      "likes": 50,
+      "_uploadedAt": "2024-12-10T11:00:00Z"
+    },
+    {
+      "id": "4",
+      "type": "Logiciel",
+      "name_product": "Firewall Pro",
+      "image": "src/assets/images/produits/firewall.jpeg",
+      "desc": "Un pare-feu avancé pour protéger votre réseau.",
+      "price": 59.99,
+      "likes": 9,
+      "_uploadedAt": "2024-12-10T12:15:00Z"
+    },
+    {
+      "id": "5",
+      "type": "Application",
+      "name_product": "SecureBrowser",
+      "image": "src/assets/images/produits/ebook.jpeg",
+      "desc": "Un navigateur web sécurisé pour une navigation privée.",
+      "price": 14.99,
+      "likes": 80,
+      "_uploadedAt": "2024-12-10T13:30:00Z"
+    },
+    {
+      "id": "6",
+      "type": "Service",
+      "name_product": "SecureVPN",
+      "image": "src/assets/images/produits/routeur.jpeg",
+      "desc": "Un service VPN pour protéger votre connexion internet.",
+      "price": 7.99,
+      "likes": 25,
+      "_uploadedAt": "2024-12-10T14:45:00Z"
+    },
+    {
+      "id": "7",
+      "type": "Service",
+      "name_product": "SecureEmail",
+      "image": "src/assets/images/produits/script.jpeg",
+      "desc": "Un service de messagerie sécurisé.",
+      "price": 4.99,
+      "likes": 6,
+      "_uploadedAt": "2024-12-10T16:00:00Z"
+    },
+    {
+      "id": "8",
+      "type": "Logiciel",
+      "name_product": "Encryption Pro",
+      "image": "src/assets/images/produits/firewall.jpeg",
+      "desc": "Un logiciel de chiffrement pour protéger vos fichiers.",
+      "price": 39.99,
+      "likes": 32,
+      "_uploadedAt": "2024-12-10T17:15:00Z"
+    },
+    {
+      "id": "9",
+      "type": "Application",
+      "name_product": "SecureApp",
+      "image": "src/assets/images/produits/camera.jpeg",
+      "desc": "Une application de sécurité tout-en-un.",
+      "price": 29.99,
+      "likes": 15,
+      "_uploadedAt": "2024-12-10T18:30:00Z"
+    },
+    {
+      "id": "10",
+      "type": "Service",
+      "name_product": "SecurePrint",
+      "image": "src/assets/images/produits/ebook.jpeg",
+      "desc": "Un service de sécurité pour les impressions.",
+      "price": 12.99,
+      "likes": 19,
+      "_uploadedAt": "2024-12-10T19:45:00Z"
+    }
+  ],
+
+  "sponsors": [
+    {
+      "id": "1",
+      "organisme": "Certilience",
+      "desc": "Sponsor officiel de la conférence annuelle de cybersécurité.",
+      "content": "Nous soutenons les initiatives de cybersécurité à travers le monde.",
+      "image": "src/assets/images/sponsors-partenariats/certilience.jpeg",
+      "link": "https://certilience.com"
+    },
+    {
+      "id": "2",
+      "organisme": "Cyberocc",
+      "desc": "Partenaire de confiance pour vos solutions de données.",
+      "content": "Nous offrons des services de gestion et d'analyse de données.",
+      "image": "src/assets/images/sponsors-partenariats/cyberocc.jpeg",
+      "link": "https://cyberocc.com"
+    },
+    {
+      "id": "3",
+      "organisme": "Cyberpreventys",
+      "desc": "Votre partenaire pour le développement web.",
+      "content": "Nous proposons des solutions web sur mesure pour votre entreprise.",
+      "image": "src/assets/images/sponsors-partenariats/cyberpreventys.png",
+      "link": "https://cyberpreventys.com"
+    },
+    {
+      "id": "4",
+      "organisme": "Cybersecure",
+      "desc": "Votre partenaire en sécurité informatique.",
+      "content": "Nous offrons des solutions de sécurité pour protéger vos données.",
+      "image": "src/assets/images/sponsors-partenariats/cybersecure.jpeg",
+      "link": "https://cybersecure.com"
+    },
+    {
+      "id": "5",
+      "organisme": "Hackuity",
+      "desc": "Nous ventons des produits informatiques numériques.",
+      "content": "Nous offrons des solutions de sécurité pour protéger vos données.",
+      "image": "src/assets/images/sponsors-partenariats/hackuity.png",
+      "link": "https://hackuity.com"
+    },
+    {
+      "id": "6",
+      "organisme": "Rudder",
+      "desc": "Nous ventons des produits informatiques numériques.",
+      "content": "Nous offrons des solutions de sécurité pour protéger vos données.",
+      "image": "src/assets/images/sponsors-partenariats/rudder.png",
+      "link": "https://rudder.com"
+    }
+  ],
+
+  "formations": [
+    {
+      "id": "1",
+      "title": "Introduction au pentest",
+      "domain": "hacking",
+      "status": "free",
+      "type": "video",
+      "image": "src/assets/images/formations/hacking.jpeg",
+      "price": 0,
+      "likes": 120,
+      "_uploadedAt": "2025-01-03T23:50:34Z"
+    },
+    {
+      "id": "2",
+      "title": "Sécurité des réseaux",
+      "domain": "cybersecurity",
+      "status": "premium",
+      "type": "text",
+      "image": "src/assets/images/formations/cybersecurity.jpeg",
+      "price": 49.99,
+      "likes": 85,
+      "_uploadedAt": "2025-01-04T10:20:15Z"
+    },
+    {
+      "id": "3",
+      "title": "Data visualization",
+      "domain": "data",
+      "status": "free",
+      "type": "video",
+      "image": "src/assets/images/formations/data.png",
+      "price": 0,
+      "likes": 150,
+      "_uploadedAt": "2025-01-05T14:35:22Z"
+    },
+    {
+      "id": "4",
+      "title": "Développement web avancé",
+      "domain": "webdev",
+      "status": "premium",
+      "type": "text",
+      "image": "src/assets/images/formations/webdev_2.jpeg",
+      "price": 59.99,
+      "likes": 95,
+      "_uploadedAt": "2025-01-06T09:45:10Z"
+    },
+    {
+      "id": "5",
+      "title": "Développement web avancé",
+      "domain": "webdev",
+      "status": "premium",
+      "type": "text",
+      "image": "src/assets/images/formations/webdev_2.jpeg",
+      "price": 59.99,
+      "likes": 95,
+      "_uploadedAt": "2025-01-07T11:00:00Z"
+    },
+    {
+      "id": "6",
+      "title": "Sécurité des réseaux",
+      "domain": "cybersecurity",
+      "status": "free",
+      "type": "text",
+      "image": "src/assets/images/formations/cybersecurity.jpeg",
+      "price": 0,
+      "likes": 110,
+      "_uploadedAt": "2025-01-08T13:15:45Z"
+    },
+    {
+      "id": "7",
+      "title": "Php,les bases",
+      "domain": "webdev",
+      "status": "free",
+      "type": "video",
+      "image": "src/assets/images/formations/webdev.png",
+      "price": 0,
+      "likes": 130,
+      "_uploadedAt": "2025-01-09T15:30:30Z"
+    },
+    {
+      "id": "8",
+      "title": "Introduction au pentest",
+      "domain": "hacking",
+      "status": "free",
+      "type": "text",
+      "image": "src/assets/images/formations/hacking.jpeg",
+      "price": 0,
+      "likes": 100,
+      "_uploadedAt": "2025-01-03T23:50:34Z"
+    },
+    {
+      "id": "10",
+      "title": "Data Science",
+      "domain": "data",
+      "status": "premium",
+      "type": "video",
+      "image": "src/assets/images/formations/data_2.jpeg",
+      "price": 59.99,
+      "likes": 200,
+      "_uploadedAt": "2025-01-04T23:50:34Z"
+    },
+    {
+      "id": "11",
+      "title": "Introduction au pentest",
+      "domain": "hacking",
+      "status": "free",
+      "type": "text",
+      "image": "src/assets/images/formations/hacking.jpeg",
+      "price": 0,
+      "likes": 120,
+      "_uploadedAt": "2025-01-05T23:50:34Z"
+    },
+    {
+      "id": "12",
+      "title": "Apprendre VueJs",
+      "domain": "webdev",
+      "status": "premium",
+      "type": "video",
+      "image": "src/assets/images/formations/webdev_2.jpeg",
+      "price": 49.99,
+      "likes": 150,
+      "_uploadedAt": "2025-01-06T23:50:34Z"
+    },
+    {
+      "id": "13",
+      "title": "Apprendre ReactJs",
+      "domain": "webdev",
+      "status": "free",
+      "type": "text",
+      "image": "src/assets/images/formations/webdev.png",
+      "price": 0,
+      "likes": 130,
+      "_uploadedAt": "2025-01-07T23:50:34Z"
+    },
+    {
+      "id": "14",
+      "title": "Apprendre AngularJs",
+      "domain": "webdev",
+      "status": "premium",
+      "type": "video",
+      "image": "src/assets/images/formations/webdev_2.jpeg",
+      "price": 59.99,
+      "likes": 140,
+      "_uploadedAt": "2025-01-08T23:50:34Z"
+    },
+    {
+      "id": "15",
+      "title": "Apprendre NodeJs",
+      "domain": "webdev",
+      "status": "free",
+      "type": "text",
+      "image": "src/assets/images/formations/webdev.png",
+      "price": 0,
+      "likes": 110,
+      "_uploadedAt": "2025-01-09T23:50:34Z"
+    },
+    {
+      "id": "16",
+      "title": "Apprendre Python pour la cybersécurité",
+      "domain": "cybersecurity",
+      "status": "premium",
+      "type": "video",
+      "image": "src/assets/images/formations/cybersecurity.jpeg",
+      "price": 69.99,
+      "likes": 160,
+      "_uploadedAt": "2025-01-10T23:50:34Z"
+    },
+    {
+      "id": "17",
+      "title": "Apprendre Python pour la data science",
+      "domain": "data",
+      "status": "premium",
+      "type": "text",
+      "image": "src/assets/images/formations/data.png",
+      "price": 79.99,
+      "likes": 170,
+      "_uploadedAt": "2025-01-11T23:50:34Z"
+    },
+    {
+      "id": "18",
+      "title": "Apprendre nmap",
+      "domain": "hacking",
+      "status": "free",
+      "type": "text",
+      "image": "src/assets/images/formations/hacking.jpeg",
+      "price": 0,
+      "likes": 140,
+      "_uploadedAt": "2025-01-12T23:50:34Z"
+    },
+    {
+      "id": "19",
+      "title": "Apprendre le reverse engineering",
+      "domain": "hacking",
+      "status": "premium",
+      "type": "video",
+      "image": "src/assets/images/formations/hacking.jpeg",
+      "price": 89.99,
+      "likes": 180,
+      "_uploadedAt": "2025-01-13T23:50:34Z"
+    },
+    {
+      "id": "20",
+      "title": "Apprendre le hacking",
+      "domain": "hacking",
+      "status": "free",
+      "type": "text",
+      "image": "src/assets/images/formations/hacking.jpeg",
+      "price": 0,
+      "likes": 150,
+      "_uploadedAt": "2025-01-14T23:50:34Z"
+    }
+  ],
+
+  "domaines": [
+    {
+      "id": "1",
+      "type": "cybersecurity"
+    },
+    {
+      "id": "2",
+      "type": "hacking"
+    },
+    {
+      "id": "3",
+      "type": "data"
+    },
+    {
+      "id": "4",
+      "type": "webdev"
+    }
+  ]
+}
