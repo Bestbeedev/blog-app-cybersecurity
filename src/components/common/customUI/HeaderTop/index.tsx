@@ -1,6 +1,9 @@
 'use client'
-
-export default function HeaderTop() {
+type Props = {
+  title: string;
+  desc: string;
+}
+export default function HeaderTop({title,desc}:Props) {
 
   return (
     <div className="bg-neutral-800">
@@ -17,17 +20,18 @@ export default function HeaderTop() {
             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
+
         <div className="mx-auto rounded-lg max-w-2xl py-32 sm:py-48 lg:py-32">
           <div className="text-center">
             <h1 className="text-balance text-5xl font-semibold tracking-tight text-neutral-50 sm:text-7xl">
-              Data to enrich your online business
+             {title}
             </h1>
             <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat.
+              {desc}
             </p>
           </div>
         </div>
+        
         <div
           aria-hidden="true"
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"

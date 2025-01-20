@@ -18,7 +18,7 @@ import { Skeleton } from "@/components/ui/skeleton"; // Import Skeleton componen
 
 export default function Formations() {
   return (
-    <div className="w-full h-full relative bg-neutral-800 py-6">
+    <div className="w-full z-50 h-full relative bg-neutral-800 py-6">
       <h1 className="text-3xl relative z-40 my-5 text-white px-[100px] text-start">
         Categories de Formations
       </h1>
@@ -125,7 +125,7 @@ export function CarouselSize() {
           Object.entries(groupFormations).map(([domain, { count }]) => (
             <CarouselItem key={domain} className="md:basis-1/2 lg:basis-1/3">
               <div className="p-1">
-                <Card className="relative bg-neutral-700 hover:border-neutral-500 hover:border border-neutral-600">
+                <Card className="relative bg-neutral-700 cursor-pointer hover:border-neutral-500 hover:border border-neutral-600">
                   <span className="absolute z-50 top-3 border border-neutral-500 text-white left-4 bg-neutral-600 p-2 px-4 rounded-full ">
                     {count}
                   </span>

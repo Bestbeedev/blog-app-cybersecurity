@@ -1,8 +1,22 @@
 export default function QualitySection() {
   return (
-    <div className="bg-gradient-to-l from-black via-purple-900 to-black py-24 sm:py-32">
+    <div className=" isolate relative py-24 sm:py-32">
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 top-[calc(100%-1rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+      >
+        <div
+          style={{
+            clipPath:
+              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+          }}
+          className="relative top-2 left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+        />
+      </div>
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="text-center text-base/7 font-semibold text-yellow-300">Déployez plus rapidement</h2>
+        <h2 className="text-center text-base/7 font-semibold text-yellow-300">
+          Déployez plus rapidement
+        </h2>
         <p className="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-neutral-50 sm:text-5xl">
           Tout ce dont vous avez besoin pour sécuriser votre application
         </p>
@@ -15,7 +29,8 @@ export default function QualitySection() {
                   Compatible mobile
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Assurez-vous que votre application est accessible et sécurisée sur tous les appareils mobiles.
+                  Assurez-vous que votre application est accessible et sécurisée
+                  sur tous les appareils mobiles.
                 </p>
               </div>
               <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
@@ -34,9 +49,12 @@ export default function QualitySection() {
             <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
               <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Performance</p>
+                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
+                  Performance
+                </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Optimisez les performances de votre application pour une expérience utilisateur fluide et rapide.
+                  Optimisez les performances de votre application pour une
+                  expérience utilisateur fluide et rapide.
                 </p>
               </div>
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
@@ -53,9 +71,12 @@ export default function QualitySection() {
             <div className="absolute inset-px rounded-lg bg-white"></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
               <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Sécurité</p>
+                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
+                  Sécurité
+                </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Protégez vos données et celles de vos utilisateurs avec des mesures de sécurité avancées.
+                  Protégez vos données et celles de vos utilisateurs avec des
+                  mesures de sécurité avancées.
                 </p>
               </div>
               <div className="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
@@ -76,7 +97,8 @@ export default function QualitySection() {
                   APIs puissantes
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Intégrez des APIs robustes pour enrichir les fonctionnalités de votre application.
+                  Intégrez des APIs robustes pour enrichir les fonctionnalités
+                  de votre application.
                 </p>
               </div>
               <div className="relative min-h-[30rem] w-full grow">
@@ -86,7 +108,9 @@ export default function QualitySection() {
                       <div className="border-b border-r border-b-white/20 border-r-white/10 bg-white/5 px-4 py-2 text-white">
                         NotificationSetting.jsx
                       </div>
-                      <div className="border-r border-gray-600/10 px-4 py-2">App.jsx</div>
+                      <div className="border-r border-gray-600/10 px-4 py-2">
+                        App.jsx
+                      </div>
                     </div>
                   </div>
                   <div className="px-6 pb-14 pt-6">{/* Exemple de code */}</div>
@@ -97,6 +121,18 @@ export default function QualitySection() {
           </div>
         </div>
       </div>
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+      >
+        <div
+          style={{
+            clipPath:
+              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+          }}
+          className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+        />
+      </div>
     </div>
-  )
+  );
 }

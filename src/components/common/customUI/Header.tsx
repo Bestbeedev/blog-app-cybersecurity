@@ -6,7 +6,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   Select,
   SelectContent,
@@ -28,7 +28,7 @@ export default function Header() {
 
   return (
     <div className="bg-neutral-700 w-full z-40 relative flex px-4 md:px-20 justify-between items-center py-3">
-      <div className="font-bold text-white text-xl">BlogSite</div>
+      <NavLink to={"/"} className="font-bold text-white text-xl">BlogSite</NavLink>
       <div className="flex items-center">
         <div className="md:hidden z-50">
           <button
@@ -52,45 +52,55 @@ export default function Header() {
           } transition-transform duration-300 md:relative md:translate-x-0 md:flex md:bg-transparent md:bg-opacity-0 md:z-auto md:flex-row md:items-center`}
         >
           <div className="flex flex-col md:flex-row md:flex items-center w-full md:w-auto">
-            {menuItems.map((item,index) => (
-              <div
-                key={index}
-                className="mx-3 text-white"
-              >
+            {menuItems.map((item, index) => (
+              <div key={index} className="mx-3 text-white">
                 <NavigationMenu>
                   <NavigationMenuList>
                     <NavigationMenuItem>
                       {item.subMenu ? (
                         <NavigationMenuTrigger className="bg-neutral-700 text-white">
-                          <Link
+                          <NavLink
                             key={item.title}
                             to={item.link || "#"}
                             onClick={handleLinkClick}
+                            className={({ isActive }) =>
+                              isActive
+                                ? "text-white"
+                                : "text-white"
+                            }
                           >
                             {item.title}
-                          </Link>
+                          </NavLink>
                         </NavigationMenuTrigger>
                       ) : (
-                        <Link
+                        <NavLink
                           key={item.title}
-                          className="mx-2 items-center text-sm flex"
+                          className={({ isActive }) =>
+                            isActive
+                              ? "mx-2 items-center text-sm flex text-yellow-500"
+                              : "mx-2 items-center text-sm flex text-white"
+                          }
                           to={item.link || "#"}
                           onClick={handleLinkClick}
                         >
                           {item.title}
-                        </Link>
+                        </NavLink>
                       )}
-                      <NavigationMenuContent className="w-full bg-neutral-700 text-white border-none rounded-lg p-4">
-                        <NavigationMenuLink >
+                      <NavigationMenuContent className="w-40 bg-neutral-700 hover:bg-neutral-700 outline-0 text-white !border-none rounded-lg py-8 px-6">
+                        <NavigationMenuLink>
                           {item.subMenu?.map((subItem, index) => (
-                            <Link
+                            <NavLink
                               key={`${item.title}-${subItem.link}-${index}`}
                               to={subItem.link}
-                              className="text-white flex flex-col"
+                              className={({ isActive }) =>
+                                isActive
+                                  ? "text-yellow-500 p-2 rounded-lg hover:bg-neutral-600 flex flex-col"
+                                  : "text-white p-2 rounded-lg hover:bg-neutral-600 flex flex-col"
+                              }
                               onClick={handleLinkClick}
                             >
                               {subItem.subTitle}
-                            </Link>
+                            </NavLink>
                           ))}
                         </NavigationMenuLink>
                       </NavigationMenuContent>

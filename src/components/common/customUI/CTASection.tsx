@@ -1,6 +1,6 @@
 export default function CtaSection() {
   return (
-    <div className="bg-gradient-to-l top-0 right-0 from-neutral-800 via-neutral-700 to-neutral-800 ">
+    <div className="bg-gradient-to-l  z-50 top-0 right-0 from-neutral-800 via-neutral-700 to-neutral-800 ">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
           <svg
@@ -8,7 +8,13 @@ export default function CtaSection() {
             aria-hidden="true"
             className="absolute left-1/2 top-1/2 -z-10 size-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
           >
-            <circle r={512} cx={512} cy={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
+            <circle
+              r={512}
+              cx={512}
+              cy={512}
+              fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
+              fillOpacity="0.7"
+            />
             <defs>
               <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
                 <stop stopColor="#7775D6" />
@@ -18,10 +24,13 @@ export default function CtaSection() {
           </svg>
           <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
             <h2 className="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-              Améliorez vos compétences en cybersécurité. Commencez votre formation dès aujourd'hui.
+              Améliorez vos compétences en cybersécurité. Commencez votre
+              formation dès aujourd'hui.
             </h2>
             <p className="mt-6 text-pretty text-lg/8 text-gray-300">
-              Rejoignez nos formations spécialisées en cybersécurité et informatique. Découvrez nos produits et lisez nos articles de blog pour rester à jour.
+              Rejoignez nos formations spécialisées en cybersécurité et
+              informatique. Découvrez nos produits et lisez nos articles de blog
+              pour rester à jour.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <a
@@ -47,5 +56,5 @@ export default function CtaSection() {
         </div>
       </div>
     </div>
-  )
+  );
 }

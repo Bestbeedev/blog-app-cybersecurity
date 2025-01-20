@@ -35,7 +35,10 @@ export default function Products() {
   };
   return (
     <>
-      <HeaderTop />
+      <HeaderTop
+        title="Des produits conçus pour sécuriser vos données et protéger vos appareils"
+        desc="Nous proposons une sélection de produits numériques et physiques pour vous aider à rester protégé dans un monde numérique en constante évolution. Que vous soyez un particulier ou une entreprise, vous trouverez ici tout ce dont vous avez besoin pour renforcer votre sécurité."
+      />
       <div className="w-full relative py-6 bg-neutral-800">
         <div className="flex relative z-40 w-full max-w-6xl items-center mx-auto px-10 justify-between">
           <h1 className="text-3xl my-5 text-white  text-start"> Produits</h1>

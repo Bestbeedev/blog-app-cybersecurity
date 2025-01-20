@@ -3,7 +3,8 @@ import {create} from "zustand";
 interface UserStore {
   user: null | {
     id: string;
-    name: string;
+    token: string;
+    username: string;
     email: string;
     role: string;
   };
@@ -18,3 +19,4 @@ const useUserStore = create<UserStore>((set) => ({
 }));
 
 export default useUserStore;
+

@@ -2,7 +2,7 @@ import { CalendarIcon, HandIcon } from "lucide-react";
 
 export default function NewsLetter() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
+    <div className="relative isolate  z-50 overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div className="max-w-xl lg:max-w-lg">
@@ -52,10 +52,7 @@ export default function NewsLetter() {
             </div>
             <div className="flex flex-col items-start">
               <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-                <HandIcon
-                  aria-hidden="true"
-                  className="size-6 text-white"
-                />
+                <HandIcon aria-hidden="true" className="size-6 text-white" />
               </div>
               <dt className="mt-4 text-base font-semibold text-white">
                 No spam

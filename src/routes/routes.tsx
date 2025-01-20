@@ -7,6 +7,7 @@ interface menuType {
 }
 import App from "@/App";
 import AppLayout from "@/layouts/AppLayout";
+import AdminLayout from "@/layouts/AdminLayout";
 import Login from "@/pages/Login";
 import Signup from "@/pages/Signup";
 import SubMenuHandler from "@/components/common/customUI/Menu/SubMenu"; // Composant pour gérer les sous-menus dynamiques
@@ -16,6 +17,7 @@ import Contact from "@/pages/Contact";
 import ArticlesHandler from "@/pages/ArticlesDetails"; 
 import ArticlePage from "@/pages/Articles"
 import Products from "@/pages/Product";      
+import Admin from "@/components/admin/Admin";
 
 export const menuItems: menuType[] = [
   { title: "Accueil", link: "/" },
@@ -25,7 +27,6 @@ export const menuItems: menuType[] = [
     title: "Articles ",
     subMenu: [
       { subTitle: "Blogs", link: "/blogs" },
-      { subTitle: "Partenariats", link: "/partenariats" },
       { subTitle: "Produits", link: "/products" },
     ],
   },
@@ -102,4 +103,15 @@ export const routes = createBrowserRouter([
       ...generateDynamicRoutes(menuItems),
     ],
   },
+  {
+      path: "/admin",
+      element: <AdminLayout />,
+      errorElement: <NotFoundPage />,
+      children: [
+        {
+          path: "",
+          element: <Admin />,
+        }
+      ],
+    }
 ]);

@@ -54,6 +54,12 @@ export type Domaine={
     type:"cybersecurity"|"hacking"|"data"|"webdev"
 }
 
-
+export type User = {
+  id: string;
+  token: string;
+  username: string;
+  email: string;
+  role: string;
+};
 
 
