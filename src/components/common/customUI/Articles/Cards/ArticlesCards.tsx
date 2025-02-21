@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+//import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useNavigate } from "react-router-dom";
@@ -26,10 +26,10 @@ export default function ArticlesCards() {
     });
   };
   return (
-    <div className="w-full relative isolate py-6 shadow-xl bg-neutral-900">
+    <div className="w-full relative overflow-hidden z-50 isolate py-6 shadow-xl bg-neutral-900">
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+        className="absolute inset-x-0 top-[calc(100%-13rem)] z-0 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
       >
         <div
           style={{
@@ -55,7 +55,7 @@ export default function ArticlesCards() {
       </div>
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        className="absolute inset-x-0 overflow-hidden  -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
       >
         <div
           style={{
@@ -81,24 +81,26 @@ export function CarouselSize() {
       replace: true,
       state: { article: JSON.stringify(article) },
     });
-    console.log(JSON.stringify(article));
   };
+
+  console.log(articles)
 
   const splitWord = (text: string, maxLength: number = 70) => {
     return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
   };
-  if (!articles) {
+  
+  if (!articles || articles.length === 0) {
     return (
-      <div className="w-full max-w-6xl  px-8">
+      <div className="w-full max-w-6xl px-8">
         <div className="flex flex-wrap">
           {[...Array(3)].map((_, index) => (
-            <div key={index} className="md:basis-1/2 lg:basis-1/3 p-1">
+            <div key={index} className="md:basis-1/2 lg:basis-1/3 max-sm:w-full p-1">
               <Card className="relative bg-neutral-700 border-neutral-600">
                 <CardContent className="flex flex-col aspect-square items-start justify-center p-6">
-                  <Skeleton className="h-64 w-full rounded-lg" />
+                  <Skeleton className="h-64 bg-neutral-500 w-full rounded-lg" />
                   <div className="flex my-3 mx-3 space-x-2">
-                    <Skeleton className="h-6 w-24 rounded-md" />
-                    <Skeleton className="h-6 w-24 rounded-md" />
+                    <Skeleton className="h-6 w-24 bg-neutral-500 rounded-md" />
+                    <Skeleton className="h-6 w-24 bg-neutral-500 rounded-md" />
                   </div>
                 </CardContent>
               </Card>
@@ -115,7 +117,7 @@ export function CarouselSize() {
         align: "start",
         loop: true,
       }}
-      className="w-full z-50 max-w-6xl px-8"
+      className="w-full max-w-6xl px-8"
     >
       <CarouselContent>
         {articles
@@ -128,35 +130,35 @@ export function CarouselSize() {
           .map((article) => (
             <CarouselItem
               key={article.id}
-              className="md:basis-1/2 lg:basis-1/3"
+              className="md:basis-1/2 cursor-pointer  lg:basis-1/3"
             >
-              <div className="p-1 z-50 cursor-pointer">
+              <div className="p-1 py-2 cursor-pointer">
                 <Card
                   onClick={() => handleArticleDetail(article)}
-                  className="relative pb-20  border-transparent hover:border-opacity-100 bg-transparent hover:border-neutral-500 hover:translate-y-1 transition-all shadow-none"
+                  className="relative h-full pb-12 border border-white/10 bg-white/10 backdrop-blur-lg hover:border-opacity-100 hover:border-white/30 hover:translate-y-1 transition-all shadow-none cursor-pointer"
+
                 >
                   <Badge
                     variant={"outline"}
-                    className="absolute border-none top-4 z-50 text-white left-3 bg-blue-500 px-3 py-2 rounded-lg"
+                    className="absolute border-none top-6 z-50 text-white left-6 bg-blue-500 px-3 py-2 rounded-lg"
                   >
                     {article.sujet}
                   </Badge>
-                  <CardContent className="flex flex-col text-white aspect-square items-start justify-center p-6">
-                    <div className="absolute top-2 cursor-pointer right-2 left-2">
+                  <CardContent className="flex h-full  flex-col text-white aspect-square items-start justify-center p-6">
+                    <div className="absolute top-3 z-40  right-4 left-4">
                       <img
                         src={article.image}
                         className="rounded-lg max-sm:h-72 max-md:h-96 object-cover h-48 w-full"
                       />
-
                       <div className="flex flex-col mx-3">
-                        <div className="text-xl my-2 text-start flex font-semibold">
+                        <div className="text-xl my-2 hover:text-yellow-300 text-start flex font-semibold">
                           {splitWord(article.title)}
                         </div>
-                        <h2 className="text-sm text-start flex my-1 font-medium">
+                        <h2 className="text-sm text-neutral-200  text-start flex my-1 font-medium">
                           {article.desc}
                         </h2>
                         <div className="flex flex-col pb-4 items-start space-y-3">
-                          <p className="text-sm flex items-center space-x-2 text-neutral-200 mt-2">
+                          <p className="text-sm flex items-center space-x-2 text-yellow-300 mt-2">
                             <LuCloudUpload size={16} className="mr-1" />
                             {new Date(article._uploadedAt).toLocaleDateString(
                               "fr-FR",
@@ -167,13 +169,13 @@ export function CarouselSize() {
                               }
                             )}
                           </p>
-                          <Button
+                          {/* <Button
                             className="my-2"
                             variant={"destructive"}
                             onClick={() => handleArticleDetail(article)}
                           >
                             Voir plus →
-                          </Button>
+                          </Button> */}
                         </div>
                       </div>
                     </div>

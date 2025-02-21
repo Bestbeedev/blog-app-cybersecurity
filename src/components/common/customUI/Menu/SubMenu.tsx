@@ -24,18 +24,18 @@ export default function SubMenuHandler() {
   const location = useLocation();
   const groupFormations = useFormationStore((state) => state.groupedCourses);
   const [filteredCourses, setFilteredCourses] = useState<Formations[]>([]);
-  const [domain,setDomain]=useState<string>("");
+  const [domain, setDomain] = useState<string>("");
 
   useEffect(() => {
-    const pathParts = location.pathname.split('/');
+    const pathParts = location.pathname.split("/");
     const domain = pathParts[pathParts.length - 1];
-    setDomain(domain)
+    setDomain(domain);
     const filtered: Formations[] = groupFormations[domain]?.items || [];
     setFilteredCourses(filtered);
     console.log(" filtered", filtered);
     console.log(location.pathname.split("/"));
   }, [location, groupFormations]);
-  
+
   console.log("courses filtered", filteredCourses);
   console.log("courses ", courses);
   const navigate = useNavigate();
@@ -50,20 +50,24 @@ export default function SubMenuHandler() {
   };
 
   //makes the fist letter be capital
-  const capitalLetter=(text:string)=>{
+  const capitalLetter = (text: string) => {
     return text.charAt(0).toUpperCase() + text.slice(1);
-  }
+  };
 
   return (
     <div>
       <HeaderTop
+        subtitle={` Formations ${
+          filteredCourses.length > 0 && `- ${capitalLetter(domain)} `
+        }`}
         title="Maîtrisez la cybersécurité grâce à nos formations spécialisées"
         desc="Rejoignez nos sessions interactives et développez une expertise reconnue dans la cybersécurité pour bâtir une carrière ou renforcer vos connaissances."
       />
       <div className="w-full relative py-6 bg-neutral-800">
         <div className="flex relative z-40 w-full max-w-6xl items-center mx-auto px-10 justify-between">
           <h1 className="text-3xl my-5 text-white text-start">
-            Formations {filteredCourses.length > 0 && `- ${capitalLetter(domain)} `}
+            Formations{" "}
+            {filteredCourses.length > 0 && `- ${capitalLetter(domain)} `}
           </h1>
           <Badge
             onClick={handleCheckDetail}
@@ -74,8 +78,7 @@ export default function SubMenuHandler() {
           </Badge>
         </div>
         <div className="flex relative pb-9 justify-center">
-          {
-           filteredCourses && filteredCourses.length > 0 ? (
+          {filteredCourses && filteredCourses.length > 0 ? (
             <CarouselSize courses={filteredCourses} />
           ) : (
             <p className="text-white">Aucune formation disponible.</p>
@@ -102,7 +105,7 @@ export function CarouselSize({ courses }: PropsCourse) {
     });
     console.log(JSON.stringify(course));
   };
-  console.log('courses props carousel',courses)
+  console.log("courses props carousel", courses);
 
   return (
     <div className="w-full max-w-6xl px-8">
@@ -119,7 +122,7 @@ export function CarouselSize({ courses }: PropsCourse) {
                 <Card className="relative pb-[70px] hover:border hover:shadow-lg hover:-translate-y-4 transition hover:border-neutral-500 bg-neutral-700 border-neutral-600">
                   <CardContent className="flex flex-col aspect-square items-center justify-center p-6">
                     <div className="absolute top-1 right-1 left-1">
-                      <CardHeader>
+                      <CardHeader className="pb-4">
                         {course.image ? (
                           <img
                             src={course.image}
@@ -138,8 +141,7 @@ export function CarouselSize({ courses }: PropsCourse) {
                           {course.title}
                         </h2>
                       </CardTitle>
-                      <CardDescription className="flex px-4 my-2 text-white">
-                       
+                      <CardDescription className="flex px-4 my-2 items-center justify-between text-white">
                         <div className="flex items-start">
                           {[...Array(5)].map((_, index) => (
                             <FaStar
@@ -152,9 +154,7 @@ export function CarouselSize({ courses }: PropsCourse) {
                             />
                           ))}
                         </div>
-                        <Badge>
-                          {course.type === "pdf" ? "PDF" : "Video"}
-                        </Badge>
+                        <Badge variant="destructive" className="rounded-md">{course.type === "pdf" ? "PDF" : "Video"}</Badge>
                       </CardDescription>
                       <CardFooter className="my-4 flex px-4 justify-between items-center">
                         {course.status === "free" && course.price === 0 ? (

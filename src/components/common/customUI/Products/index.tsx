@@ -21,6 +21,7 @@ import { Produits } from "@/types/customTypes";
 import { Badge } from "@/components/ui/badge";
 import useProductStore from "@/store/product"
 import { useFetchProduct } from "@/api/Products/FetchProduct";
+import { Skeleton } from "@/components/ui/skeleton"; // Import Skeleton component
 export default function ProductCards() {
     const navigate = useNavigate();
     const handleAllView = () => {
@@ -32,10 +33,10 @@ export default function ProductCards() {
       });
     };
   return (
-    <div className="w-full relative  z-50 isolate py-6 bg-gradient-to-l from-neutral-700 via-neutral-900  to-bg-neutral-800 shadow-lg">
+    <div className="w-full relative overflow-hidden   isolate py-6 bg-gradient-to-l from-neutral-700 via-neutral-900  to-bg-neutral-800 shadow-lg">
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+        className="absolute overflow-hidden  inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
       >
         <div
           style={{
@@ -62,7 +63,7 @@ export default function ProductCards() {
       </div>
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        className="absolute overflow-hidden  inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
       >
         <div
           style={{
@@ -91,6 +92,30 @@ export function CarouselSize() {
     console.log(JSON.stringify(product));
   };
 
+    if (!products || products.length === 0) {
+      return (
+        <div className="w-full max-w-6xl px-8">
+          <div className="flex flex-wrap">
+            {[...Array(3)].map((_, index) => (
+              <div
+                key={index}
+                className="md:basis-1/2 lg:basis-1/3 p-1 max-sm:w-full"
+              >
+                <Card className="relative bg-neutral-700 border-neutral-600">
+                  <CardContent className="flex flex-col aspect-square items-start justify-center p-6">
+                    <Skeleton className="h-64 bg-neutral-500 w-full rounded-lg" />
+                    <div className="flex my-3 mx-3 space-x-2">
+                      <Skeleton className="h-6 bg-neutral-500 w-24 rounded-md" />
+                      <Skeleton className="h-6 bg-neutral-500 w-24 rounded-md" />
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
 
   
   return (
